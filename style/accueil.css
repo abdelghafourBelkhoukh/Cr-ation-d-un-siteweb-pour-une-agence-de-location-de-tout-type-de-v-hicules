@@ -285,6 +285,11 @@ text-decoration: none;
     padding-left: 10px;
 }
 
+ @media (max-width: 415px){
+
+       
+}
+
 @media (max-width: 376px){
 
     .footer{
@@ -379,7 +384,7 @@ text-decoration: none;
 
 @media (max-width: 749px){
     .header-menu-left {
-        display: none;
+        /* display: block; */
 
     }
     /* header .navbar-links {
@@ -433,10 +438,18 @@ text-decoration: none;
     .header-menu-left{
 
         width: 100%;
+        padding-left: 0px;
     }
     .header-menu-right1{
         margin-left: 217px;
     }
+
+    
+      .main.article3{
+        margin-left: 16px;
+        margin-right: 0px;
+      }
+           
     
 }
 
@@ -486,6 +499,7 @@ text-decoration: none;
         margin-left: 296px;
         margin-top: 311px;
     }
+
 
     .header-menu-right{
         display: none;
