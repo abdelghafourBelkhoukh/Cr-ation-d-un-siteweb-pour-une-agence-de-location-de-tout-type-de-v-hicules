@@ -6,23 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Réservation</title>
     <link rel="stylesheet" href="./style/reservation.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
     <div class="header-menu">
       <div class="logo">
         <img src="./image/logo.png" alt="" />
       </div>
+      <div class="toggle">
+        <div class="ouvre">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="ferme">
+          <i class="fa-solid fa-x"></i>
+        </div>
+      </div>
       <div class="header-menu-left">
+        <!-- <ul class="navbar-links"> -->
         <a href="./index.html" class="lien-menu">Accueil</a>
         <a href="./gallerie.html" class="lien-menu">Gallerie</a>
-
         <a href="./contact.html" class="lien-menu">Contact</a>
       </div>
       <div class="header-menu-right">
         <a href="./reservation.html">
           <button><p>Réservation</p></button>
         </a>
+        <!-- </ul> -->
       </div>
     </div>
 
@@ -32,7 +44,8 @@
       <h1 class="title">
         Reservation
         <span class="actualise" style="margin-left: 10px; cursor: pointer"
-          ><i class="fa fa-car fa-lg"></i></span>
+          ><i class="fa fa-car fa-lg"></i
+        ></span>
       </h1>
       <!-- type of vehicules -->
       <div class="type-vehicule">
@@ -47,7 +60,6 @@
 
     <div class="container">
       <div class="footer">
-      
         <div class="left">
           <p>Mobile : +212 669 58 73 13</p>
           <p>Email : contact@rentmenow-maroc.com</p>
@@ -64,5 +76,6 @@
     </div>
 
     <script src="./main.js"></script>
+    <script src="./navbar.js"></script>
   </body>
 </html>

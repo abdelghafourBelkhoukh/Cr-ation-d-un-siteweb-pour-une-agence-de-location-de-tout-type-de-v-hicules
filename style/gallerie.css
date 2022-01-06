@@ -9,8 +9,10 @@ body{
     z-index: -2;
 background-size: cover;
     background-repeat: no-repeat;
- 
+}
 
+.toggle{
+    display: none;
 }
 
 .header-menu {
@@ -55,6 +57,11 @@ background-size: cover;
     border: none;
     padding-left: 20px;
 }
+.header-menu-right button:hover {
+    background-color: transparent;
+    border: 2px solid black;
+    color: #000000;
+}
 
 
 .header-menu-right button p {
@@ -74,6 +81,12 @@ background-size: cover;
     padding-right: 20px;
 }
 
+.header-menu-right1 button:hover {
+    background-color: transparent;
+    border: 2px solid black;
+    color: #000000;
+}
+
 .header-menu-right1 button p {
     font-weight: 600;
     font-size: 15px;
@@ -89,6 +102,14 @@ font-weight: 700;
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 font-size: 16px;
 }
+
+#lien-menu2 {
+    border-bottom: 4px solid #fbc531
+    }
+.header-menu-left #lien-menu4{
+        display: none;
+    }
+    
 
 .header-menu-left a {
 text-decoration: none;
@@ -219,7 +240,7 @@ input {
 }
 
 .main{
-    margin-top: 70px;
+    margin-top: 0px;
 }
 @media (max-width: 376px){
 
@@ -342,6 +363,7 @@ input {
     }
     .header-menu-right1{
         margin-left: 217px;
+        margin-top: 130px;
     }
     
 }
@@ -493,7 +515,7 @@ input {
 
 @media  (max-width: 376px){
     .header-menu .logo img{
-        margin-top: 17px;
+        margin-top: 10px;
     }
     
     .header-menu-right1 {
@@ -542,9 +564,66 @@ input {
     }
 
     .header-menu-left{
-        padding-left: 14px;
-        padding-top: 28px;
+        padding: 0; 
+        top: 12vh;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        line-height: 4;
+        justify-content: space-around;
+        background-color: #000000;
+        height: 70%;
+        transform: translateX(100%);
+        transition: 0.5s;
+        position: fixed;
     }
+
+    .header-menu-left a{
+        position: relative;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-size: 1.2rem;
+    }
+
+    .toggle{
+        height: 100%;
+        padding: 0 20px;
+        display: flex;
+        font-size: 2rem;
+        align-items: center;
+    }
+
+    .ferme{
+        display: none;
+    }
+    .ouvre{
+        display: block;
+    }
+
+    .open .ouvre{
+        display: none;
+    }
+
+    .open .ferme{
+        display: block;
+    }
+
+    .open .header-menu-left{
+        transform: translateX(0);
+    }
+
+    .header-menu-left #lien-menu2{
+        border-bottom: none
+    }
+
+    .header-menu-left #lien-menu4{
+        display: flex;
+        padding-bottom: 40px;
+    }
+
     .header-image{
         height: 68vh;
     }

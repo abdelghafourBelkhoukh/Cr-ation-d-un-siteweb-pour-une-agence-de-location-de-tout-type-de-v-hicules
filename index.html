@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RentMeNow</title>
     <link rel="stylesheet" href="./style/accueil.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
     <div class="header-menu">
@@ -13,10 +17,19 @@
         <img src="./image/logo.png" alt="" />
         
       </div>
+      <div class="toggle">
+        <div class="ouvre">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="ferme">
+          <i class="fa-solid fa-x"></i>
+        </div>
+      </div>
       <div class="header-menu-left">
-        <a href="./index.html" class="lien-menu" style="border-bottom: 4px solid #fbc531">Accueil</a>
-        <a href="./gallerie.html" class="lien-menu">Gallerie</a>
-        <a href="./contact.html" class="lien-menu">Contact</a>
+        <a href="./index.html" class="lien-menu" id="lien-menu1">Accueil</a>
+        <a href="./gallerie.html" class="lien-menu" id="lien-menu2">Gallerie</a>
+        <a href="./contact.html" class="lien-menu" id="lien-menu3">Contact</a>
+        <a href="./reservation.html" class="lien-menu" id="lien-menu4">Reservation</a>
       </div>
       <div class="header-menu-right">
         <a href="./reservation.html">
@@ -129,5 +142,6 @@
     </div>
 
     <script src="./main.js"></script>
+    <script src="./navbar.js"></script>
   </body>
 </html>
